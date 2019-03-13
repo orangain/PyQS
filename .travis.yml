@@ -6,6 +6,9 @@ python:
 
 sudo: false
 
+before_install:
+  - export BOTO_CONFIG=/dev/null
+
 install:
   - make setup
   - pip install coveralls
